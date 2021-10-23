@@ -1,0 +1,71 @@
+// sass --watch style.scss:style.css pour pouvoir lire du scss
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+    body {
+
+
+        header {
+            color: rgb(233, 233, 233);
+            background-color: black;
+            height: 100vh;
+            overflow: hidden;
+            
+            
+            .upHeader {
+                display: flex;
+                justify-content: space-between;
+                padding: 6vh 6vh 0 6vh;
+
+                .firstDivHeader {
+                    font-size: 30px;
+                }
+                .secondDivHeader {
+                    display: flex;
+                    align-items: center;
+
+                    nav ul{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        list-style: none;
+
+                        li {
+                            padding: 0 5vh 0 5vh;
+                            
+                        }
+                    }
+                }
+                .thirdDivHeader {
+                    font-size: 30px;
+                    text-align: end;
+                }
+            }
+            .middleHeader {
+                display: flex;
+                justify-content: center;
+
+                img:nth-child(1) {
+                    position: relative;
+                    left: 16%;
+                    bottom: 30px;
+                }
+                img:nth-child(2) {
+                    position: relative;
+                    right: 18%;
+                    top: 25px;
+                    width: auto;
+                    height: 80vh;
+                    transform: rotate(3deg);
+                }
+            }
+        }
+
+        footer {
+
+        }
+    }
+}
