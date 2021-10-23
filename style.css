@@ -16,7 +16,7 @@
   padding: 6vh 6vh 0 6vh;
 }
 * body header .upHeader .firstDivHeader {
-  font-size: 30px;
+  font-size: 20px;
 }
 * body header .upHeader .secondDivHeader {
   display: flex;
@@ -32,7 +32,7 @@
   padding: 0 5vh 0 5vh;
 }
 * body header .upHeader .thirdDivHeader {
-  font-size: 30px;
+  font-size: 20px;
   text-align: end;
 }
 * body header .middleHeader {
@@ -47,10 +47,34 @@
 * body header .middleHeader img:nth-child(2) {
   position: relative;
   right: 18%;
-  top: 25px;
+  top: 57px;
   width: auto;
   height: 80vh;
   transform: rotate(3deg);
+}
+* body header .downHeader {
+  padding: 0 6vh 6vh 6vh;
+  position: relative;
+  bottom: 400px;
+}
+* body header .downHeader .downHeaderFlex {
+  display: flex;
+  justify-content: space-between;
+}
+* body header .downHeader .downHeaderFlex h1 {
+  width: min-content;
+  font-size: 60px;
+}
+* body header .downHeader .downHeaderFlex div:nth-child(2) {
+  width: min-content;
+}
+* body header .downHeader .downHeaderFlex div:nth-child(2) > img {
+  position: relative;
+  bottom: 180px;
+  height: 50px;
+  margin: 30px 0 30px 0;
+  width: auto;
+  border-radius: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
