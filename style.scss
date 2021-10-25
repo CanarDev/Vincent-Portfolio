@@ -1,4 +1,8 @@
 // sass --watch style.scss:style.css pour pouvoir lire du scss
+@import "SCSS/abstract/variables",
+        "SCSS/abstract/mixins",
+        "SCSS/layout/header";
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,8 +13,8 @@
 
 
         header {
-            color: rgb(233, 233, 233);
-            background-color: black;
+            color: $textColor;
+            background-color: $backgroundColor;
             height: 100vh;
             overflow: hidden;
             
@@ -80,7 +84,7 @@
                         width: min-content;
                         > img {
                             position: relative;
-                            bottom: 180px;
+                            bottom: 270px;
                             height: 50px;
                             margin: 30px 0 30px 0;
                             width: auto;
