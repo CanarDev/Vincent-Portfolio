@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    color: $textColor;
+    background-color: $backgroundColor;
+
+    .textHeader {
+        font-weight: 20px;
+    }
+
+    > div {
+        display: flex;
+        align-items: center;
+        padding: 5vh 5vw 5vh 5vw;
+
+        nav ul {
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            
+
+            > li {
+                list-style: none;
+                text-align: center;
+                padding: 0 2vw 0 2vw;
+            }
+        }
+    }
+}
