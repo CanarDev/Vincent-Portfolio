@@ -1,5 +1,49 @@
+@mixin oorigin {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* Merci kléklé */
+}
+
 @mixin xl {
     @media screen and (max-width: 1200px) {
         @content;
     }
+}
+
+@mixin flexHeaderFooter {
+    display: flex;
+    align-items: center;
+    padding: 5vh 5vw 5vh 5vw;
+}
+
+@mixin displayEvenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@mixin displayCenter {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin minContent {
+    height: min-content;
+}
+
+@mixin maxContent {
+    height: max-content;
+}
+
+@mixin textAlignLeft {
+    text-align: left;
+}
+
+@mixin textAlignCenter {
+    text-align: center;
+}
+
+@mixin textAlignRight {
+    text-align: right;
 }

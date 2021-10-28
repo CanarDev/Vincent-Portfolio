@@ -1,15 +1,6 @@
 // sass --watch style.scss:style.css pour pouvoir lire du scss
 @import "SCSS/abstract/variables",
         "SCSS/abstract/mixins",
-        "SCSS/layout/header";
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-
-    body {
-
-    }
-}
+        "SCSS/layout/header",
+        "SCSS/layout/homepage",
+        "SCSS/layout/footer";
