@@ -57,7 +57,7 @@ header > div nav ul:nth-child(2) > li {
 * .firstSectionHomepage {
   background-color: #272727;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   height: 86vh;
   color: #e9e9e9;
@@ -65,7 +65,7 @@ header > div nav ul:nth-child(2) > li {
 @media screen and (max-width: 1200px) {
   * .firstSectionHomepage {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 30% 50%;
+    grid-template-rows: 32% 50%;
     margin: 0 0 -14vh 0;
     height: 100vh;
   }
@@ -74,20 +74,38 @@ header > div nav ul:nth-child(2) > li {
   grid-column: 1/2;
   grid-row: 1;
   display: flex;
-  justify-content: center;
-  text-align: left;
+  justify-content: end;
+  text-align: right;
   align-items: center;
-}
-* .firstSectionHomepage .firstItem h2 {
-  width: 60%;
 }
 @media screen and (max-width: 1200px) {
   * .firstSectionHomepage .firstItem {
     grid-column: 1/-1;
     grid-row: 1;
+    display: flex;
+    justify-content: center;
   }
-  * .firstSectionHomepage .firstItem h2 {
-    width: 82%;
+}
+* .firstSectionHomepage .firstItem .cardHomepage {
+  background: linear-gradient(45deg, #3d3d3d, #777777);
+  border-radius: 10px;
+  box-shadow: 15px 15px 30px #080808;
+  width: 90%;
+  padding: 5vh 5vw 5vh 3vw;
+  margin: 2vh 0 2vh 2vw;
+}
+@media screen and (max-width: 1200px) {
+  * .firstSectionHomepage .firstItem .cardHomepage {
+    padding: 2vh 2vw 2vh 2vw;
+    margin: 2vh 2vw 3vh 2vw;
+  }
+}
+* .firstSectionHomepage .firstItem .cardHomepage h2 {
+  font-size: 22px;
+}
+@media screen and (max-width: 1200px) {
+  * .firstSectionHomepage .firstItem .cardHomepage h2 {
+    width: 100%;
     font-size: 22px;
     text-align: center;
   }
@@ -138,15 +156,20 @@ header > div nav ul:nth-child(2) > li {
   grid-column: 1/2;
   grid-row: 2;
   display: flex;
-  justify-content: center;
-  text-align: left;
+  justify-content: end;
+  text-align: right;
   align-items: center;
 }
-* .thirdItem h2 {
-  width: 60%;
+* .thirdItem .cardHomepage {
+  width: 90%;
+  background: linear-gradient(45deg, #3d3d3d, #777777);
+  border-radius: 10px;
+  box-shadow: 15px 15px 30px #080808;
+  padding: 5vh 5vw 5vh 3vw;
+  margin: 2vh 0 2vh 2vw;
 }
 @media screen and (max-width: 1200px) {
-  * .thirdItem {
+  * .thirdItem .cardHomepage {
     display: none;
   }
 }
@@ -157,6 +180,10 @@ footer {
   display: flex;
   justify-content: space-evenly;
   position: initial;
+}
+footer .footerLinks:nth-child(1) a:nth-child(2) img {
+  border-radius: 50%;
+  height: 30px;
 }
 footer > div {
   display: flex;

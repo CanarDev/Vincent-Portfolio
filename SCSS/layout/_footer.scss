@@ -4,6 +4,15 @@ footer {
     @include displayEvenly;
     position:initial;
 
+    .footerLinks:nth-child(1) {
+        a:nth-child(2) {
+            img{
+                border-radius: 50%;
+                height: 30px
+            }
+        }
+    }
+
     > div {
         @include flexHeaderFooter;
 

@@ -28,6 +28,11 @@
     justify-content: center;
 }
 
+@mixin displayEnd {
+    display: flex;
+    justify-content: end;
+}
+
 @mixin minContent {
     height: min-content;
 }
@@ -46,4 +51,10 @@
 
 @mixin textAlignRight {
     text-align: right;
+}
+
+@mixin cardHomepage {
+    background: linear-gradient(45deg, rgb(61, 61, 61), rgb(119, 119, 119)) ;
+    border-radius: 10px;
+    box-shadow: 15px 15px 30px $backgroundColor;
 }

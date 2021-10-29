@@ -3,13 +3,13 @@
     .firstSectionHomepage {
         background-color: rgb(39, 39, 39);
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
         height: 86vh;
         color: $textColor;
         @include xl{
             grid-template-columns: 50% 50%;
-            grid-template-rows: 30% 50%;
+            grid-template-rows: 32% 50%;
             margin: 0 0 -14vh 0;
             height: 100vh;
         }
@@ -17,19 +17,30 @@
         .firstItem {
             grid-column: 1 / 2;
             grid-row: 1;
-            @include displayCenter;
-            @include textAlignLeft;
+            @include displayEnd;
+            @include textAlignRight;
             align-items: center;
-            h2 {
-                width: 60%;
-            }
             @include xl{
                 grid-column: 1 / -1;
                 grid-row: 1;
-                h2{
-                    width: 82%;
+                @include displayCenter;
+            }
+            .cardHomepage{
+                @include cardHomepage;
+                width: 90%;
+                padding: 5vh 5vw 5vh 3vw;
+                margin: 2vh 0 2vh 2vw;
+                @include xl{
+                    padding: 2vh 2vw 2vh 2vw;
+                    margin: 2vh 2vw 3vh 2vw;
+                }
+                h2 {
                     font-size: 22px;
-                    text-align: center;
+                    @include xl{
+                        width: 100%;
+                        font-size: 22px;
+                        text-align: center;
+                    }
                 }
             }
         }
@@ -54,7 +65,6 @@
                 @include xl {
                     padding: 2vh 2vw 2vh 2vw;
                 }
-
                 img {
                     height: 230px;
                     width: 230px;
@@ -80,14 +90,17 @@
         .thirdItem {
             grid-column: 1 / 2;
             grid-row: 2;
-            @include displayCenter;
-            @include textAlignLeft;
+            @include displayEnd;
+            @include textAlignRight;
             align-items: center;
-            h2 {
-                width: 60%;
-            }
-            @include xl{
-                display: none;
+            .cardHomepage {
+                width: 90%;
+                @include cardHomepage;
+                padding: 5vh 5vw 5vh 3vw;
+                margin: 2vh 0 2vh 2vw;
+                @include xl{
+                    display: none;
+                }
             }
         }
     }
