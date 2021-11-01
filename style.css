@@ -1,6 +1,9 @@
 @charset "UTF-8";
 header {
   display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
   justify-content: space-between;
   color: #e9e9e9;
   background-color: #080808;
@@ -11,7 +14,7 @@ header .textHeader {
 header > div {
   display: flex;
   align-items: center;
-  padding: 5vh 5vw 5vh 5vw;
+  padding: 3vh 3vw 3vh 3vw;
 }
 header > div nav ul:nth-child(1) {
   display: none;
@@ -45,6 +48,9 @@ header > div nav ul:nth-child(2) > li {
   text-align: center;
   font-size: 15px;
   padding: 0 2vw 0 2vw;
+}
+header > div nav ul:nth-child(2) > li > a {
+  text-decoration: none;
 }
 
 * {
@@ -194,31 +200,44 @@ header > div nav ul:nth-child(2) > li {
   }
 }
 * body .partOnePrésentation .contentAboutMe > img {
-  height: 20vh;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px #080808;
+  height: 50vh;
 }
 @media screen and (max-width: 1200px) {
   * body .partOnePrésentation .contentAboutMe > img {
     height: unset;
-    width: 100px;
+    height: 30vh;
     align-self: center;
   }
 }
 * body .partOnePrésentation .contentAboutMe > p {
   display: flex;
   align-items: center;
+  max-width: 40%;
+  text-align: end;
 }
 @media screen and (max-width: 1200px) {
   * body .partOnePrésentation .contentAboutMe > p {
+    max-width: unset;
     align-self: center;
-    padding: 2vw;
+    padding: 6vh 2vw 0 2vw;
     text-align: center;
   }
 }
 * body .partOnePrésentation .contentAboutMe:nth-child(6) {
-  padding-bottom: 30px;
+  padding-bottom: 3vh;
 }
-* body .partOnePrésentation .contentAboutMe:nth-child(4) {
-  flex-direction: column-reverse;
+* body .partOnePrésentation .contentAboutMe:nth-child(4) p {
+  text-align: start;
+}
+@media screen and (max-width: 1200px) {
+  * body .partOnePrésentation .contentAboutMe:nth-child(4) {
+    flex-direction: column-reverse;
+  }
+  * body .partOnePrésentation .contentAboutMe:nth-child(4) p {
+    text-align: center;
+  }
 }
 
 footer {
@@ -235,7 +254,7 @@ footer .footerLinks:nth-child(1) a:nth-child(2) img {
 footer > div {
   display: flex;
   align-items: center;
-  padding: 5vh 5vw 5vh 5vw;
+  padding: 3vh 3vw 3vh 3vw;
 }
 footer > div p {
   font-size: 15px;

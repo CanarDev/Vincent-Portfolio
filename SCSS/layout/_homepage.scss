@@ -119,10 +119,12 @@
                     flex-direction: column;
                 }
                 > img{
-                    height: 20vh;
+                    border-radius: 10px;
+                    box-shadow: 10px 10px 20px $backgroundColor;
+                    height: 50vh;
                     @include xl {
                         height: unset;
-                        width: 100px;
+                        height: 30vh;
                         align-self: center;
                     }
                 }
@@ -130,18 +132,30 @@
                 > p {
                     display: flex;
                     align-items: center;
+                    max-width: 40%;
+                    text-align: end;
                     @include xl {
+                        max-width: unset;
                         align-self: center;
-                        padding: 2vw;
+                        padding: 6vh 2vw 0 2vw;
                         text-align: center;
                     }
                 }
             }
             .contentAboutMe:nth-child(6) {
-                padding-bottom: 30px;
+                padding-bottom: 3vh;
             }
             .contentAboutMe:nth-child(4) {
-                flex-direction: column-reverse;
+                p {
+                    text-align: start;
+                }
+                @include xl {
+                    flex-direction: column-reverse;
+                    p {
+                        text-align: center;
+                    }
+                }
+                
             }
         }
     }

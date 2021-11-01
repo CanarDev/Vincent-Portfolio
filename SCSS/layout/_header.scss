@@ -1,5 +1,8 @@
 header {
     display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
     justify-content: space-between;
     color: $textColor;
     background-color: $backgroundColor;
@@ -41,6 +44,10 @@ header {
                 text-align: center;
                 font-size: 15px;
                 padding: 0 2vw 0 2vw;
+
+                > a {
+                    text-decoration: none;
+                }
             }
         }
     }
