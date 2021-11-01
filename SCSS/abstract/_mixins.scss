@@ -33,6 +33,11 @@
     justify-content: end;
 }
 
+@mixin Column {
+    display: flex;
+    flex-direction: column;
+}
+
 @mixin minContent {
     height: min-content;
 }
