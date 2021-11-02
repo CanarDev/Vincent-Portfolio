@@ -1,6 +1,12 @@
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
 .burgerOppenning {
     display: none !important;
 }
+
 .burgerOpen {
     background-color: $colorSection;
     height: 100vh;
@@ -14,6 +20,7 @@
         position: static;
         top: -1px;
         a{
+            background-color: $colorSection;
             @include displayCenter;
             flex-direction: column;
             text-decoration: none;
