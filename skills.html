@@ -19,7 +19,7 @@
         </div>
         <div>
             <nav>
-                <ul>
+                <ul onclick="burgerFunction()">
                     <span class="Burger"></span>
                     <span class="Burger"></span>
                     <span class="Burger"></span>
@@ -32,6 +32,15 @@
             </nav>
         </div>
     </header>
+    <section id="MyBurger" class="burgerOpen burgerOppenning">
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="skills.html">Compétences</a></li>
+                <li><a href="projects.html">Projets</a></li>
+            </ul>
+        </nav>
+    </section>
 
     <section class="mySkills">
         <h2>Mes compétences en developpement web ainsi que mes langages en cours d'apprentissage:</h2>
@@ -77,5 +86,6 @@
             <a href="https://linkedin.co/in/vincentmichel-" target="_blank"><img src="images/Logo/LinkedIn.png"></a>
         </div>
     </footer>
+    <script type="text/javascript" src="JS/Burger.js"></script>
 </body>
 </html>

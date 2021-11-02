@@ -1,0 +1,26 @@
+.burgerOppenning {
+    display: none !important;
+}
+.burgerOpen {
+    background-color: $colorSection;
+    height: 100vh;
+    display: block;
+
+    nav ul {
+    background-color:$colorSection; 
+    @include displayCenter;
+    flex-direction: column;
+    > li{
+        position: static;
+        top: -1px;
+        a{
+            @include displayCenter;
+            flex-direction: column;
+            text-decoration: none;
+            text-align: center;
+            padding: 12vh;
+            font-size: 22px;
+        }
+    }
+}
+}
