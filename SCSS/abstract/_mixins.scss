@@ -15,7 +15,10 @@
 @mixin flexHeaderFooter {
     display: flex;
     align-items: center;
-    padding: 3vh 3vw 3vh 3vw;
+    padding: 5vh 5vw 5vh 5vw;
+    @include xl {
+        padding: 3vh 3vw 3vh 3vw;
+    }
 }
 
 @mixin displayEvenly {

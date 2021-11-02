@@ -3,7 +3,7 @@
     color: $textColor;
     body {
         .firstSectionHomepage {
-            background-color: rgb(39, 39, 39);
+            background-color: $colorSection;
             display: grid;
             grid-template-columns: 50% 50%;
             grid-template-rows: 50% 50%;

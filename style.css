@@ -14,7 +14,12 @@ header .textHeader {
 header > div {
   display: flex;
   align-items: center;
-  padding: 3vh 3vw 3vh 3vw;
+  padding: 5vh 5vw 5vh 5vw;
+}
+@media screen and (max-width: 1200px) {
+  header > div {
+    padding: 3vh 3vw 3vh 3vw;
+  }
 }
 header > div nav ul:nth-child(1) {
   display: none;
@@ -240,6 +245,96 @@ header > div nav ul:nth-child(2) > li > a {
   }
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* Merci kléklé */
+  color: #e9e9e9;
+}
+* body .mySkills {
+  background-color: #272727;
+  height: max-content;
+  padding-bottom: 5vh;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 93px 93px 93px 93px 93px 93px;
+}
+@media screen and (max-width: 1200px) {
+  * body .mySkills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+* body .mySkills h2 {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 28px;
+  grid-column: 1/-1;
+  grid-row: 1;
+}
+@media screen and (max-width: 1200px) {
+  * body .mySkills h2 {
+    text-align: center;
+    width: 90%;
+  }
+}
+* body .mySkills .skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+* body .mySkills .skills > img {
+  height: 100px;
+}
+@media screen and (max-width: 1200px) {
+  * body .mySkills .skills > img {
+    height: 120px;
+    padding: 2vh 0;
+  }
+}
+* body .mySkills .skill1 {
+  grid-column: 2;
+  grid-row: 2;
+}
+* body .mySkills .skill2 {
+  grid-column: 3;
+  grid-row: 2;
+}
+* body .mySkills .skill3 {
+  grid-column: 4;
+  grid-row: 2;
+}
+* body .mySkills .skill4 {
+  grid-column: 2;
+  grid-row: 4;
+}
+* body .mySkills .skill5 {
+  grid-column: 3;
+  grid-row: 4;
+}
+* body .mySkills .skill6 {
+  grid-column: 4;
+  grid-row: 4;
+}
+* body .mySkills .skill7 {
+  grid-column: 2;
+  grid-row: 6;
+}
+* body .mySkills .skill8 {
+  grid-column: 3;
+  grid-row: 6;
+}
+* body .mySkills .skill9 {
+  grid-column: 4;
+  grid-row: 6;
+}
+
 footer {
   background-color: #080808;
   color: #e9e9e9;
@@ -254,7 +349,12 @@ footer .footerLinks:nth-child(1) a:nth-child(2) img {
 footer > div {
   display: flex;
   align-items: center;
-  padding: 3vh 3vw 3vh 3vw;
+  padding: 5vh 5vw 5vh 5vw;
+}
+@media screen and (max-width: 1200px) {
+  footer > div {
+    padding: 3vh 3vw 3vh 3vw;
+  }
 }
 footer > div p {
   font-size: 15px;
