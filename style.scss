@@ -1,9 +1,3 @@
 // sass --watch style.scss:style.css pour pouvoir lire du scss
 @import "SCSS/abstract/variables",
-        "SCSS/abstract/mixins",
-        "SCSS/layout/header",
-        "SCSS/layout/openBurger",
-        "SCSS/layout/homepage",
-        "SCSS/layout/skills",
-        "SCSS/layout/projects",
-        "SCSS/layout/footer";
+        "SCSS/abstract/mixins";
