@@ -83,68 +83,6 @@ header nav ul:nth-child(2) .headerReds li img {
   font-family: "Poppins", sans-serif;
   /* Merci kléklé */
 }
-* .presentationHomepage {
-  height: 90vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 85vw;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin: 0 auto;
-}
-* .presentationHomepage .leftPresentationHomepage {
-  width: 30vw;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-* .presentationHomepage .leftPresentationHomepage .cardPresentation {
-  height: 300px;
-  background-color: #fff1ac;
-  border-radius: 10px;
-  border: 3px solid grey;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-* .presentationHomepage .leftPresentationHomepage .cardPresentation .circleImage {
-  border-radius: 100%;
-  width: 200px;
-  height: 200px;
-  background-image: url(/images/Me/Vincent.JPG);
-  background-position: center;
-  background-size: 350px;
-}
-* .presentationHomepage .leftPresentationHomepage .cardPresentation h2 {
-  text-align: end;
-  width: 150px;
-  font-size: 40px;
-}
-* .presentationHomepage .leftPresentationHomepage .boxPresentation {
-  border: 3px solid grey;
-  border-radius: 10px;
-  width: 30vw;
-  height: 145px;
-}
-* .presentationHomepage .middleBar {
-  width: 15px;
-  height: 70vh;
-  background-color: #fff1ac;
-}
-* .presentationHomepage .rightPresentationHomepage {
-  width: 30vw;
-  height: 450px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-* .presentationHomepage .rightPresentationHomepage > .boxPresentation {
-  border: 3px solid grey;
-  border-radius: 10px;
-  width: 30vw;
-  height: 145px;
-}
 
 * {
   padding: 0;
