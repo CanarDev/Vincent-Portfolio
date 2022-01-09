@@ -1,4 +1,136 @@
 @charset "UTF-8";
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 40px;
+  background-color: #333333;
+}
+header .usernameHeader {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: #f1f1f1;
+}
+header .usernameHeader img {
+  width: 40px;
+}
+@media screen and (max-width: 1200px) {
+  header .usernameHeader {
+    gap: 20px;
+  }
+}
+header .navigation {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media screen and (max-width: 1200px) {
+  header .navigation {
+    gap: 20px;
+  }
+}
+header .navigation .Instagram img {
+  width: 30px;
+}
+@media screen and (max-width: 1200px) {
+  header .navigation .Instagram {
+    display: none;
+  }
+}
+header .navigation .GitHub img {
+  width: 30px;
+}
+@media screen and (max-width: 1200px) {
+  header .navigation .GitHub {
+    display: none;
+  }
+}
+header .navigation nav {
+  z-index: 2;
+}
+header .navigation nav .burger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+header .navigation nav .burger span:nth-child(1) {
+  width: 15px;
+  height: 3px;
+  background-color: #f1f1f1;
+  align-self: flex-start;
+  transition: 0.2s all;
+}
+header .navigation nav .burger span:nth-child(2) {
+  width: 30px;
+  height: 3px;
+  background-color: #f1f1f1;
+  align-self: flex-end;
+  transition: 0.2s all;
+}
+header .navigation nav .burger span:nth-child(3) {
+  width: 15px;
+  height: 3px;
+  background-color: #f1f1f1;
+  align-self: flex-end;
+  transition: 0.2s all;
+}
+header .navigation nav .burger:hover > span {
+  width: 30px;
+  transition: 0.2s all;
+}
+header .burgerOpen {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #333333;
+  width: 0;
+  transition: 0.5s all;
+}
+header .burgerOpen .navLinks {
+  width: 0;
+  gap: 15vh;
+}
+header .burgerOpen .navLinks > li {
+  list-style: none;
+  display: none;
+}
+header .burgerOpen .navLinks > li > a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+header .navOpen {
+  left: calc(100% - 20vw);
+  width: unset;
+  transition: 0.5s all;
+}
+header .navOpen .navLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  height: 100vh;
+  gap: 15vh;
+}
+header .navOpen .navLinks > li {
+  display: block;
+}
+@media screen and (max-width: 1200px) {
+  header .navOpen .navLinks {
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  header .navOpen {
+    left: calc(100% - 100vw);
+    width: unset;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;

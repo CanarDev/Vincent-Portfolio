@@ -1,3 +1,129 @@
 header{
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px;
+    background-color: $backgroundHeader;
+    @include xl{
+
+    }
+    .usernameHeader{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        color: $fontColor;
+        img{
+            width: 40px;
+        }
+        @include xl{
+            gap: 20px;
+        }
+    }
+    .navigation{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        @include xl{
+            gap: 20px;
+        }
+        .Instagram{
+            img{
+                width: 30px;
+            }
+            @include xl{
+                display: none;
+            }
+        }
+        .GitHub{
+            img{
+                width: 30px;
+            }
+            @include xl{
+                display: none;
+            }
+        }
+        nav{
+            z-index: 2;
+            .burger{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                span:nth-child(1){
+                    width: 15px;
+                    height: 3px;
+                    background-color: $fontColor;
+                    align-self: flex-start;
+                    transition: 0.2s all;
+                }
+                span:nth-child(2){
+                    width: 30px;
+                    height: 3px;
+                    background-color: $fontColor;
+                    align-self: flex-end;
+                    transition: 0.2s all;
+                }
+                span:nth-child(3){
+                    width: 15px;
+                    height: 3px;
+                    background-color: $fontColor;
+                    align-self: flex-end;
+                    transition: 0.2s all;
+                }
+                &:hover{
+                    >span{
+                        width: 30px;
+                        transition: 0.2s all;
+                    }
+                }
+            }
+        }
+    }
+    .burgerOpen{
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        background-color: $backgroundHeader;
+        width: 0;
+        transition: 0.5s all;
+        .navLinks{
+            width: 0;
+            gap: 15vh;
+            >li{
+                list-style: none;
+                display: none;
+                >a{
+                    color: $fontColor;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .navOpen{
+        left: calc(100% - 20vw);
+        width: unset;
+        transition: 0.5s all;
+        .navLinks{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 20vw;
+            height: 100vh;
+            gap: 15vh;
+            >li{
+                display: block;
+            }
+            @include xl {
+                width: 100vw;
+            }
+            
+        }
+        @include xl{
+            left: calc(100% - 100vw);
+            width: unset;
+        }
+    }
 }
