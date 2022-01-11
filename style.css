@@ -1,10 +1,14 @@
 @charset "UTF-8";
 header {
+  z-index: 6;
   display: flex;
+  width: 100vw;
+  position: fixed;
+  top: -1px;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 40px;
-  background-color: #333333;
+  padding: 15px 40px;
+  background-color: #1f1f1f;
 }
 @media screen and (max-width: 1200px) {
   header {
@@ -56,7 +60,7 @@ header .navigation .GitHub img {
   }
 }
 header .navigation nav {
-  z-index: 2;
+  z-index: 8;
 }
 header .navigation nav .burger {
   display: flex;
@@ -91,11 +95,11 @@ header .navigation nav .burger:hover > span {
   transition: 0.2s all;
 }
 header .burgerOpen {
-  z-index: 1;
+  z-index: 7;
   position: absolute;
   top: 0;
   left: 100%;
-  background-color: #333333;
+  background-color: #1f1f1f;
   width: 0;
   transition: 0.5s all;
 }
@@ -110,6 +114,8 @@ header .burgerOpen .navLinks > li {
 header .burgerOpen .navLinks > li > a {
   color: #f1f1f1;
   text-decoration: none;
+  font-size: 35px;
+  font-family: "Damion", cursive;
 }
 header .navOpen {
   left: calc(100% - 15vw);
@@ -122,7 +128,7 @@ header .navOpen .navLinks {
   align-items: center;
   justify-content: center;
   width: 15vw;
-  height: 100vh;
+  height: 101vh;
   gap: 15vh;
 }
 header .navOpen .navLinks > li {
@@ -144,16 +150,202 @@ header .navOpen .navLinks > li {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   /* Merci kléklé */
 }
-* body {
-  height: 200vh;
+* body .visualPosition {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  position: fixed;
+  top: 50%;
+  left: 10px;
+}
+* body .visualPosition .buttonVisualPosition {
+  width: 20px;
+  height: 5px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  transition: 0.5s all;
+}
+* body .visualPosition .buttonVisualPosition:hover {
+  width: 35px;
+}
+@media screen and (max-width: 1200px) {
+  * body .visualPosition {
+    display: none;
+  }
+}
+* body .visualPosition .active {
+  width: 30px;
+  transition: 0.5s all;
+}
+* body .accueil {
+  height: 100vh;
+  background-image: url(/images/backgrounds/accueil.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Chivo", sans-serif;
+}
+* body .accueil .maxW {
+  padding-top: 6vh;
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1200px) {
+  * body .accueil .maxW {
+    width: 90vw;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+}
+* body .accueil .maxW .sectionInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  color: whitesmoke;
+}
+@media screen and (max-width: 1200px) {
+  * body .accueil .maxW .sectionInfo {
+    gap: 5px;
+  }
+}
+* body .accueil .maxW .sectionInfo .name {
+  display: flex;
+  gap: 15px;
+}
+* body .accueil .maxW .sectionInfo .name > h1 {
+  font-size: 70px;
+  font-family: "Damion", cursive;
+}
+@media screen and (max-width: 1200px) {
+  * body .accueil .maxW .sectionInfo .name > h1 {
+    font-size: 75px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1200px) {
+  * body .accueil .maxW .sectionInfo .name {
+    flex-direction: column;
+    gap: unset;
+  }
+}
+* body .accueil .maxW .sectionInfo .underTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 200px;
+}
+@media screen and (max-width: 1200px) {
+  * body .accueil .maxW .sectionInfo .underTitle {
+    flex-direction: column-reverse;
+  }
+}
+* body .accueil .maxW .sectionInfo .underTitle .decorationUnderTitle:nth-child(1) {
+  width: 120px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #c70000;
+  align-self: flex-end;
+}
+* body .accueil .maxW .sectionInfo .underTitle .decorationUnderTitle:nth-child(2) {
+  width: 120px;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #af0000;
+}
+* body .accueil .maxW .sectionInfo > h2 {
+  margin-top: 10px;
+  font-size: 25px;
+}
+@media screen and (max-width: 1200px) {
+  * body .accueil .maxW .sectionInfo > h2 {
+    text-align: center;
+  }
+}
+* body .accueil .maxW .sectionImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+}
+@media screen and (max-width: 1200px) {
+  * body .accueil .maxW .sectionImage {
+    margin-top: unset;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+}
+* body .accueil .maxW .sectionImage .squarePhoto {
+  width: 190%;
+  height: 50vh;
+  background-image: url(/images/Me/VincentJardin.JPG);
+  background-size: cover;
+  border-radius: 40% 10px;
+}
+@media screen and (max-width: 1200px) {
+  * body .accueil .maxW .sectionImage .squarePhoto {
+    width: 50vw;
+    height: 20em;
+    border-radius: 10px 40%;
+    background-position: left;
+  }
+}
+* body .accueil .maxW .sectionImage h1 {
+  z-index: 3;
+  position: relative;
+  bottom: 100px;
+  right: 290px;
+  font-size: 55px;
+  color: white;
+}
+* body .accueil .maxW .sectionImage h1 a {
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
+}
+@media screen and (max-width: 1200px) {
+  * body .accueil .maxW .sectionImage h1 {
+    position: unset;
+  }
+}
+* body .skills {
+  height: 100vh;
+  background-image: url(/images/backgrounds/competences.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: left;
+}
+* body .projects {
+  height: 100vh;
+  background-image: url(/images/backgrounds/projets.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right;
+}
+* body .contact {
+  height: 100vh;
+  background-image: url(/images/backgrounds/Contact.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   /* Merci kléklé */
 }
 
@@ -161,6 +353,7 @@ header .navOpen .navLinks > li {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   /* Merci kléklé */
 }
 
