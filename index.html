@@ -10,25 +10,25 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>Portfolio - Homepage</title>
 </head>
-<body>
+<body class="homepage">
     <header>
         <div class="usernameHeader">
             <img src="./images/Logo/LogoNoBackground.png" alt="">
             <h2>
-                <a class="typewrite" data-period="2000" data-type='[ "Vincent Michel", "Portfolio", "CanarDev"]'>
+                <a class="typewrite" data-period="1000" data-type='[ "Homepage", "Web Portfolio", "@CanarDev"]'>
                     <span class="wrap"></span>
                 </a>
             </h2>
         </div>
         <div class="navigation">
-            <div class="Instagram"><img src="./images/Logo/Instagram.png" alt=""></div>
+            <div class="LinkedIn"><img src="./images/Logo/LinkedIn.png" alt=""></div>
             <div class="GitHub"><img src="./images/Logo/Git.png" alt=""></div>
+            <div class="Instagram"><img src="./images/Logo/Instagram.png" alt=""></div>
             <nav>
                 <ul class="burger" id="burger"> <!-- Burger -->
                     <span></span>
@@ -55,47 +55,92 @@
         <a href="#Projects"><div class="buttonVisualPosition"></div></a>
         <a href="#contact"><div class="buttonVisualPosition"></div></a>
     </div>
-    <section id="Accueil" class="accueil">
-        <div class="maxW">
-            <div class="sectionInfo">
-                <div class="name">
-                    <h1>Vincent</h1>
-                    <h1>Michel</h1>
+
+    <section class="scroll-parent">
+        <section id="Accueil" class="accueil">
+            <div class="maxW">
+                <div class="sectionInfo">
+                    <div class="name">
+                        <h1>Mon Web Portfolio</h1>
+                    </div>
+                    <div class="underTitle">
+                        <div class="decorationUnderTitle"></div>
+                        <div class="decorationUnderTitle"></div>
+                    </div>
+                    <a href="about-me.html">En savoir plus sur moi</a>
                 </div>
-                <div class="underTitle">
-                    <div class="decorationUnderTitle"></div>
-                    <div class="decorationUnderTitle"></div>
+                <div class="sectionImage">
+                    <div class="squarePhoto"><div class="fondu"></div></div>
+                    <h1>Vincent Michel</h1>
                 </div>
-                <h2>Étudiant /</h2>
-                <h2>Web Developpeur</h2>
-                
             </div>
-            <div class="sectionImage">
-                
-                <div class="squarePhoto"></div>
-                <h1>Mon <a>Portfolio</a></h1>
+        </section>
+
+
+        <section id="Skills" class="skills">
+            <div class="maxWCompetences">
+                <div class="sectionCompetenceHome">
+                    <div class="titleCompetenceHome">
+                        <h1>Compétences</h1>
+                    </div>
+                    <div class="underTitle">
+                        <div class="decorationUnderTitle"></div>
+                        <div class="decorationUnderTitle"></div>
+                    </div>
+                    <a href="skills.html">Voir mes compétences</a>
+                </div>
+                <div class="sectionImageCompetences">
+                    
+                    <div class="squarePhotoSkills"><div class="fondu"></div></div>
+                    <h1>N.02</h1>
+                    
+                </div>
             </div>
-        </div>
-    </section>
-    <section id="Skills" class="skills">
-        <div>
+        </section>
 
-        </div>
-    </section>
-    <section id="Projects" class="projects">
-        <div>
 
-        </div>
-    </section>
-    <section id="contact" class="contact">
-        <div>
+        <section id="Projects" class="projects">
+            <div class="maxWProjets">
+                <div class="sectionProjetsHome">
+                    <div class="titleProjetsHome">
+                        <h1>Projets</h1>
+                    </div>
+                    <div class="underTitle">
+                        <div class="decorationUnderTitle"></div>
+                        <div class="decorationUnderTitle"></div>
+                    </div>
+                    <a href="projects.html">Voir mes Projets</a>
+                </div>
+                <div class="sectionImageProjets">
+                    <div class="squarePhotoProjets"><div class="fondu"></div></div>
+                    <h1>N.03</h1>
+                </div>
+            </div>
+        </section>
 
-        </div>
+
+        <section id="contact" class="contact">
+            <div class="maxWContact">
+                <div class="sectionContactHome">
+                    <div class="titleContactHome">
+                        <h1>Contact</h1>
+                    </div>
+                    <div class="underTitle">
+                        <div class="decorationUnderTitle"></div>
+                        <div class="decorationUnderTitle"></div>
+                    </div>
+                    <a href="contact.html">Me contacter</a>
+                </div>
+                <div class="sectionImageContact">
+                    <div class="squarePhotoContact"><div class="fondu"></div></div>
+                    <h1>N.04</h1>
+                </div>
+            </div>
+        </section>
     </section>
     <footer>
 
     </footer>
     <script type="text/javascript" src="./JS/Header.js"></script>
-    <script type="text/javascript" src="./JS/Scroll.js"></script>
 </body>
 </html>

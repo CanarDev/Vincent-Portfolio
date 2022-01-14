@@ -7,7 +7,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 15px 40px;
-    background-color: $backgroundHeader;
+    backdrop-filter: blur(3px);
     @include xl{
         padding: 20px 25px;
     }
@@ -15,7 +15,8 @@ header{
         display: flex;
         align-items: center;
         gap: 30px;
-        font-family: 'Damion', cursive;
+        font-family: 'Lobster Two', cursive;
+        font-style: italic;
         font-size: 30px;
         a{
             color: $fontColor;
@@ -23,6 +24,7 @@ header{
         }
         img{
             width: 40px;
+            filter: brightness(10);
         }
         @include xl{
             gap: 20px;
@@ -35,7 +37,7 @@ header{
         @include xl{
             gap: 20px;
         }
-        .Instagram{
+        .LinkedIn{
             img{
                 width: 30px;
             }
@@ -44,6 +46,14 @@ header{
             }
         }
         .GitHub{
+            img{
+                width: 30px;
+            }
+            @include xl{
+                display: none;
+            }
+        }
+        .Instagram{
             img{
                 width: 30px;
             }
@@ -84,6 +94,7 @@ header{
                     >span{
                         width: 30px;
                         transition: 0.2s all;
+                        background-color: rgb(199, 0, 0);
                     }
                 }
             }
@@ -92,11 +103,12 @@ header{
     .burgerOpen{
         z-index: 7;
         position: absolute;
-        top: 0;
-        left: 100%;
-        background-color: $backgroundHeader;
-        width: 0;
+        bottom: 100%;
+        left: 0;
+        background-color: $background;
+        width: 100vw;
         transition: 0.5s all;
+        height: 101vh;
         .navLinks{
             width: 0;
             gap: 15vh;
@@ -113,7 +125,7 @@ header{
         }
     }
     .navOpen{
-        left: calc(100% - 15vw);
+        bottom: calc(100% - 100vh);
         width: unset;
         transition: 0.5s all;
         .navLinks{
@@ -121,7 +133,7 @@ header{
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 15vw;
+            width: 100vw;
             height: 101vh;
             gap: 15vh;
             >li{
@@ -131,10 +143,6 @@ header{
                 width: 100vw;
             }
             
-        }
-        @include xl{
-            left: calc(100% - 100vw);
-            width: unset;
         }
     }
 }
