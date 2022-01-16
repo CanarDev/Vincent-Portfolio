@@ -1,0 +1,20 @@
+* {
+    @include oorigin;
+    .aboutmePage{
+        .sectionAboutMe{
+            background-image: url(/images/backgrounds/AccueilHome.jpeg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: left;
+            height: 100vh;
+            @include xl{
+                background-attachment: unset;
+                background-position: center;
+                
+            }
+            .myPresentation{
+                
+            }
+        }
+    }
+}

@@ -788,25 +788,30 @@ header .navOpen .navLinks > li {
   border-radius: 10px;
   background-color: #af0000;
 }
-* .homepage .scroll-parent .contact .maxWContact .sectionContactHome a {
-  margin-top: 10px;
-  padding: 1em;
-  font-size: 25px;
-  text-align: center;
-  text-decoration: none;
-  color: whitesmoke;
-  border: 4px solid whitesmoke;
-  border-radius: 10px 40px;
-  width: fit-content;
-  align-self: flex-end;
+* .homepage .scroll-parent .contact .maxWContact .sectionContactHome .textContact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap: 10px;
 }
 @media screen and (max-width: 1200px) {
-  * .homepage .scroll-parent .contact .maxWContact .sectionContactHome a {
-    padding: 1em;
-    border-radius: 40px 10px;
-    margin-top: 20px;
-    align-self: center;
+  * .homepage .scroll-parent .contact .maxWContact .sectionContactHome .textContact {
+    align-items: center;
+    text-align: center;
   }
+}
+* .homepage .scroll-parent .contact .maxWContact .sectionContactHome .textContact > h2 {
+  text-align: end;
+}
+@media screen and (max-width: 1200px) {
+  * .homepage .scroll-parent .contact .maxWContact .sectionContactHome .textContact > h2 {
+    text-align: center;
+  }
+}
+* .homepage .scroll-parent .contact .maxWContact .sectionContactHome .textContact > h2 > a {
+  color: whitesmoke;
+  text-decoration: underline;
 }
 * .homepage .scroll-parent .contact .maxWContact .sectionImageContact {
   display: flex;
@@ -876,6 +881,12 @@ header .navOpen .navLinks > li {
   background-attachment: fixed;
   background-position: left;
 }
+@media screen and (max-width: 1200px) {
+  * .skillspage {
+    background-attachment: unset;
+    background-position: center;
+  }
+}
 * .skillspage .allSkills {
   height: max-content;
   display: flex;
@@ -888,7 +899,6 @@ header .navOpen .navLinks > li {
 }
 @media screen and (max-width: 1200px) {
   * .skillspage .allSkills {
-    background-attachment: unset;
     height: max-content;
   }
 }
@@ -956,6 +966,115 @@ header .navOpen .navLinks > li {
   box-sizing: border-box;
   scroll-behavior: smooth;
   /* Merci kléklé */
+}
+* .projectsPage {
+  background-image: url(/images/backgrounds/projets.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: left;
+}
+@media screen and (max-width: 1200px) {
+  * .projectsPage {
+    background-attachment: unset;
+    background-position: center;
+  }
+}
+* .projectsPage .allProjects {
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 10vh;
+}
+@media screen and (max-width: 1200px) {
+  * .projectsPage .allProjects {
+    height: max-content;
+  }
+}
+* .projectsPage .allProjects > h1 {
+  color: whitesmoke;
+  font-size: 60px;
+}
+@media screen and (max-width: 1200px) {
+  * .projectsPage .allProjects > h1 {
+    text-align: center;
+  }
+}
+* .projectsPage .allProjects .maxW {
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1200px) {
+  * .projectsPage .allProjects .maxW {
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+}
+* .projectsPage .allProjects .maxW > a {
+  text-decoration: none;
+}
+* .projectsPage .allProjects .maxW > a .blocProject {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #141414;
+  border: 4px solid whitesmoke;
+  padding: 2em 3em;
+  border-radius: 100px 10px;
+  gap: 30px;
+  width: 420px;
+  height: 300px;
+}
+@media screen and (max-width: 1200px) {
+  * .projectsPage .allProjects .maxW > a .blocProject {
+    width: 400px;
+  }
+}
+* .projectsPage .allProjects .maxW > a .blocProject > img {
+  width: 100px;
+}
+@media screen and (max-width: 1200px) {
+  * .projectsPage .allProjects .maxW > a .blocProject > img {
+    width: 70px;
+  }
+}
+* .projectsPage .allProjects .maxW > a .blocProject > .textProject {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  color: whitesmoke;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* Merci kléklé */
+}
+* .aboutmePage .sectionAboutMe {
+  background-image: url(/images/backgrounds/AccueilHome.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: left;
+  height: 100vh;
+}
+@media screen and (max-width: 1200px) {
+  * .aboutmePage .sectionAboutMe {
+    background-attachment: unset;
+    background-position: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,17 +8,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/Logo/LogoNoBackground.png">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>Portfolio - Projets</title>
 </head>
 
-<body>
+<body class="projectsPage">
     <header>
-
+        <div class="usernameHeader">
+            <img src="./images/Logo/LogoNoBackground.png" alt="">
+            <h2>
+                <a class="typewrite" data-period="1000" data-type='[ "Homepage", "Web Portfolio", "@CanarDev"]'>
+                    <span class="wrap"></span>
+                </a>
+            </h2>
+        </div>
+        <div class="navigation">
+            <div class="LinkedIn"><img src="./images/Logo/LinkedIn.png" alt=""></div>
+            <div class="GitHub"><img src="./images/Logo/Git.png" alt=""></div>
+            <div class="Instagram"><img src="./images/Logo/Instagram.png" alt=""></div>
+            <nav>
+                <ul class="burger" id="burger"> <!-- Burger -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </ul>
+            </nav>
+        </div>
+        <nav class="burgerOpen" id="burgerLinks">
+            <ul class="navLinks">
+                <li><a href="index.html">home</a></li>
+                <li><a href="about-me.html">A propos de moi</a></li>
+                <li><a href="skills.html">Compétences</a></li>
+                <li><a href="projects.html">Projets</a></li>
+            </ul>
+        </nav>
     </header>
+
+
+    <section class="allProjects">
+        <h1>Mes Projets</h1>
+        <div class="maxW">
+            <a href="https://pokedex-online-js.vercel.app/" target="_blank">
+                <div class="blocProject">
+                    <img src="/images/projets/pokedex.png" alt="">
+                    <div class="textProject">
+                        <h2>Pokedex</h2>
+                        <p>Création d'un pokedex avec des données provenant d'une API: PokeAPI</p>
+                        <h3>(JS)</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/CanarDev/A1-Project-MeuhMeuh.git" target="_blank">
+                <div class="blocProject">
+                    <img src="/images/Logo/meuhmeuhtrousseoffoff.png" alt="">
+                    <div class="textProject">
+                        <h2>MeuhMeuhLaTrousse</h2>
+                        <p>Création d'un site internet avec un système de blog, système de commentaire ainsi qu'un système de droits</p>
+                        <h3>(HTML, CSS, JS et PHP)</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="https://integration-vecel.vercel.app/" target="_blank">
+                <div class="blocProject">
+                    <img src="/images/Logo/Language/logo_sass.png" alt="">
+                    <div class="textProject">
+                        <h2>Integration</h2>
+                        <p>Integration d'une maquette en SCSS</p>
+                        <h3>(HTML, SCSS)</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/ClemOurs/rendu-git.git" target="_blank">
+                <div class="blocProject">
+                    <img src="/images/Logo/IIM.png" alt="">
+                    <div class="textProject">
+                        <h2>Extension</h2>
+                        <p>Création d'une extension afin d'embellir notre portail étudiant</p>
+                        <h3>(CSS, JS)</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/IIM-Creative-Technology/algorithmie-CanarDev.git" target="_blank">
+                <div class="blocProject">
+                    <img src="/images/Logo/Language/logo_python.png" alt="">
+                    <div class="textProject">
+                        <h2>algorithmie</h2>
+                        <p>4 exercises python dont la génération de fausses cartes de crédits, générateur de mot de passe ainsi qu'un traducteur du binaire vers le hexa</p>
+                        <h3>(Python)</h3>
+                    </div>
+                </div>
+            </a>
+            <a href="https://github.com/GrandEmpereur/TechUpdate-Js.git" target="_blank">
+                <div class="blocProject">
+                    <img src="/images/Logo/Language/logo_javascript.png" alt="">
+                    <div class="textProject">
+                        <h2>TechUpdate</h2>
+                        <p>En pédagogie inversée, créer un site visant a transmettre un savoir : du javascript</p>
+                        <h3>(HTML, CSS et JS)</h3>
+                    </div>
+                </div>
+            </a>
+            
+            
+        </div>
+        
+    </section>
     
     <footer>
 
     </footer>
+    <script type="text/javascript" src="./JS/Header.js"></script>
 </body>
 
 </html>
