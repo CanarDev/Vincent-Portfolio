@@ -7,13 +7,44 @@
             background-attachment: fixed;
             background-position: left;
             height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
             @include xl{
                 background-attachment: unset;
                 background-position: center;
                 
             }
             .myPresentation{
-                
+                color: $fontColor;
+                h1{
+                    
+                }
+                .underTitle{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 20px;
+                    width: 200px;
+                    @include xl {
+                        align-self: center;
+                    }
+                    .decorationUnderTitle:nth-child(1){
+                        width: 120px;
+                        height: 6px;
+                        border-radius: 10px;
+                        background-color: $decorationLine;
+                        align-self: flex-end;
+                    }
+                    .decorationUnderTitle:nth-child(2){
+                        width: 120px;
+                        height: 6px;
+                        border-radius: 10px;
+                        background-color: $decorationLineSecond;
+                        
+                    }
+                }
             }
         }
     }

@@ -15,12 +15,13 @@ header{
         display: flex;
         align-items: center;
         gap: 30px;
-        font-family: 'Lobster Two', cursive;
+        font-family: 'Poppins';
         font-style: italic;
-        font-size: 30px;
+        font-size: 18px;
         a{
             color: $fontColor;
-
+            display: flex;
+            align-items: center;
         }
         img{
             width: 40px;
@@ -119,7 +120,7 @@ header{
                     color: $fontColor;
                     text-decoration: none;
                     font-size: 35px;
-                    font-family: 'Damion', cursive;
+                    font-family: 'Poppins';
                 }
             }
         }
