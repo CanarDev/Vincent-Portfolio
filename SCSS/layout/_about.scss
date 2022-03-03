@@ -14,12 +14,195 @@
             @include xl{
                 background-attachment: unset;
                 background-position: center;
-                
             }
-            .myPresentation{
-                color: $fontColor;
-                h1{
+
+            .topMe{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 150px;
+                @include xl{
+                    flex-direction: column;
+                    gap: 20px;
+                }
+                .imageAboutMe{
+                    width: 40vw;
+                    height: 40vh;
+                    background-image: url(/images/Me/VincentInThePole.jpg);
+                    background-size: cover;
+                    border-radius: 200px 10px;
+                    background-position: center;
+                    @include xl{
+                        width: 70vw;
+                        height: 16em;
+                        border-radius: 20px 150px;
+                        background-position: center 35%;
+                    }
+                    .fondu{
+                        width: 100%;
+                        height: 100%;
+                        background: linear-gradient(transparent 70%, $background);
+                        border-radius: 200px 10px;
+                        @include xl{
+                            border-radius: 20px 150px;
+                        }
+                    }
+                }
+                .textPresentation{
+                    display: flex;
+                    flex-direction: column;
+                    @include xl{
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                    h1{
+                        color: $fontColor;
+                        font-family: "Jost", sans-serif;
+                        font-size: 55px;
+                        text-align: end;
+                    }
+                    .underTitle{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-self: flex-end;
+                        gap: 20px;
+                        width: 200px;
+                        margin: 20px 0;
+                        @include xl {
+                            align-self: center;
+                        }
+                        .decorationUnderTitle:nth-child(1){
+                            width: 120px;
+                            height: 6px;
+                            border-radius: 10px;
+                            background-color: $decorationLine;
+                            align-self: flex-end;
+                        }
+                        .decorationUnderTitle:nth-child(2){
+                            width: 120px;
+                            height: 6px;
+                            border-radius: 10px;
+                            background-color: $decorationLineSecond;
+                            
+                        }
+                    }
+                    h3{
+                        color: $fontColor;
+                        font-family: "Jost", sans-serif;
+                        font-size: 45px;
+                        text-align: end;
+                    }
+                }
+
+            }
+        }
+        .sectionPassion{
+            height: max-content;
+            min-height: 100vh;
+            background-image: url(/images/backgrounds/competences.jpeg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            display: flex;
+            gap: 25px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: $fontColor;
+            font-family: 'Jost', sans-serif;
+            h2{
+                font-family: "Jost", sans-serif;
+                font-size: 55px;
+            }
+            .underTitle{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+                width: 200px;
+                @include xl {
+                    align-self: center;
+                }
+                .decorationUnderTitle:nth-child(1){
+                    width: 120px;
+                    height: 6px;
+                    border-radius: 10px;
+                    background-color: $decorationLine;
+                    align-self: flex-end;
+                }
+                .decorationUnderTitle:nth-child(2){
+                    width: 120px;
+                    height: 6px;
+                    border-radius: 10px;
+                    background-color: $decorationLineSecond;
                     
+                }
+            }
+            p{
+                width: 70%;
+                font-size: 25px;
+            }
+            .passionImages{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                justify-content: space-around;
+                width: 90%;
+                >img{
+                    width: 400px;
+                    max-height: 300px;
+                    border-radius: 130px 10px;
+                    @include xl{
+                        width: 350px;
+                    }
+                }
+            }
+            @include xl{
+                background-attachment: unset;
+                padding: 50px 0;
+                p{
+                    width: 90%;
+                    font-size: 20px;
+                }
+            }
+        }
+        .sectionSoftSkills{
+            height: 100vh;
+            background-image: url(/images/backgrounds/projets.jpeg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: right;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: 'Jost', sans-serif;
+            @include xl{
+                background-attachment: unset;
+                flex-direction: column;
+                height: max-content;
+                padding: 20px 0;
+            }
+            >div{
+                width: 45%;
+                @include xl{
+                    width: 90%;
+                }
+            }
+            .softSkillsText{
+                @include xl{
+                    display: flex;
+                    flex-direction: column;
+                }
+                color: $fontColor;
+                h2{
+                    font-family: "Jost", sans-serif;
+                    font-size: 55px;
+                    @include xl{
+                        text-align: center;
+                    }
                 }
                 .underTitle{
                     display: flex;
@@ -27,6 +210,7 @@
                     justify-content: center;
                     gap: 20px;
                     width: 200px;
+                    margin: 20px 0;
                     @include xl {
                         align-self: center;
                     }
@@ -42,7 +226,12 @@
                         height: 6px;
                         border-radius: 10px;
                         background-color: $decorationLineSecond;
-                        
+                    }
+                }
+                p{
+                    font-size: 25px;
+                    @include xl{
+                        text-align: center;
                     }
                 }
             }
