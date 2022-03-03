@@ -1229,15 +1229,44 @@ header .navOpen .navLinks > li {
   width: 90%;
   margin-top: 50px;
 }
-* .aboutmePage .sectionPassion .passionImages > img {
+* .aboutmePage .sectionPassion .passionImages .imagesPassion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 400px;
+  height: 260px;
   max-height: 300px;
   border-radius: 130px 10px;
+  transition: 0.1s all;
+}
+* .aboutmePage .sectionPassion .passionImages .imagesPassion:hover {
+  transition: 0.1s all;
+  background-color: #141414;
+  background-image: unset;
+}
+* .aboutmePage .sectionPassion .passionImages .imagesPassion:hover > p {
+  display: block;
 }
 @media screen and (max-width: 1200px) {
-  * .aboutmePage .sectionPassion .passionImages > img {
+  * .aboutmePage .sectionPassion .passionImages .imagesPassion {
     width: 350px;
   }
+}
+* .aboutmePage .sectionPassion .passionImages .imagesPassion > p {
+  font-size: 25px;
+  display: none;
+}
+* .aboutmePage .sectionPassion .passionImages .music {
+  background-image: url(/images/about-me/droeloe.png);
+  background-size: cover;
+}
+* .aboutmePage .sectionPassion .passionImages .skateboard {
+  background-image: url(/images/about-me/longboard.jpeg);
+  background-size: cover;
+}
+* .aboutmePage .sectionPassion .passionImages .voyages {
+  background-image: url(/images/about-me/tenerife.jpeg);
+  background-size: cover;
 }
 @media screen and (max-width: 1200px) {
   * .aboutmePage .sectionPassion {

@@ -152,13 +152,46 @@
                 justify-content: space-around;
                 width: 90%;
                 margin-top: 50px;
-                >img{
+                .imagesPassion{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     width: 400px;
+                    height: 260px;
                     max-height: 300px;
                     border-radius: 130px 10px;
+                    transition: 0.1s all;
+                    &:hover{
+                        transition: 0.1s all;
+                        background-color: $background;
+                        background-image: unset;
+
+                        >p{
+                            display: block;
+                        }
+                    }
                     @include xl{
                         width: 350px;
                     }
+                    >p{
+                        font-size: 25px;
+                        display: none;
+                    }
+                    
+                }
+                .music{
+                    background-image: url(/images/about-me/droeloe.png);
+                    background-size: cover;
+                }
+                .skateboard{
+                    background-image: url(/images/about-me/longboard.jpeg);
+                    background-size: cover;
+
+                }
+                .voyages{
+                    background-image: url(/images/about-me/tenerife.jpeg);
+                    background-size: cover;
+
                 }
             }
             @include xl{
