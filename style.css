@@ -1331,5 +1331,10 @@ header .navOpen .navLinks > li {
 * .aboutmePage .sectionSoftSkills img {
   width: 45%;
 }
+@media screen and (max-width: 1200px) {
+  * .aboutmePage .sectionSoftSkills img {
+    width: 65%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
