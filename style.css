@@ -1327,5 +1327,8 @@ header .navOpen .navLinks > li {
     text-align: center;
   }
 }
+* .aboutmePage .sectionSoftSkills img {
+  width: 45%;
+}
 
 /*# sourceMappingURL=style.css.map */
