@@ -1217,7 +1217,7 @@ header .navOpen .navLinks > li {
   border-radius: 10px;
   background-color: #af0000;
 }
-* .aboutmePage .sectionPassion p {
+* .aboutmePage .sectionPassion li {
   width: 70%;
   font-size: 25px;
 }
@@ -1359,12 +1359,20 @@ header .navOpen .navLinks > li {
     text-align: center;
   }
 }
+* .aboutmePage .sectionSoftSkills .softSkillsText li {
+  font-size: 25px;
+}
+@media screen and (max-width: 1200px) {
+  * .aboutmePage .sectionSoftSkills .softSkillsText li {
+    text-align: center;
+  }
+}
 * .aboutmePage .sectionSoftSkills img {
-  width: 45%;
+  height: 75%;
 }
 @media screen and (max-width: 1200px) {
   * .aboutmePage .sectionSoftSkills img {
-    width: 65%;
+    height: 55%;
   }
 }
 

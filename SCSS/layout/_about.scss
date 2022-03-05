@@ -141,7 +141,7 @@
                     
                 }
             }
-            p{
+            li{
                 width: 70%;
                 font-size: 25px;
             }
@@ -270,11 +270,17 @@
                         text-align: center;
                     }
                 }
+                li{
+                    font-size: 25px;
+                    @include xl{
+                        text-align: center;
+                    }
+                }
             }
             img{
-                width: 45%;
+                height: 75%;
                 @include xl {
-                    width: 65%;
+                    height: 55%;
                 }
             }
         }
