@@ -10,6 +10,7 @@ header{
     backdrop-filter: blur(3px);
     @include xl{
         padding: 20px 25px;
+        backdrop-filter: unset;
     }
     .usernameHeader{
         display: flex;
