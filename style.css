@@ -119,7 +119,7 @@ header .burgerOpen {
 }
 header .burgerOpen .navLinks {
   width: 0;
-  gap: 15vh;
+  gap: 10vh;
 }
 header .burgerOpen .navLinks > li {
   list-style: none;
@@ -128,8 +128,26 @@ header .burgerOpen .navLinks > li {
 header .burgerOpen .navLinks > li > a {
   color: whitesmoke;
   text-decoration: none;
-  font-size: 35px;
+  font-size: 30px;
   font-family: "Poppins";
+}
+header .burgerOpen .navLinks .linksInNav {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  header .burgerOpen .navLinks .linksInNav {
+    display: flex;
+    gap: 30px;
+  }
+}
+header .burgerOpen .navLinks .linksInNav .LinkedIn img {
+  width: 30px;
+}
+header .burgerOpen .navLinks .linksInNav .GitHub img {
+  width: 30px;
+}
+header .burgerOpen .navLinks .linksInNav .Instagram img {
+  width: 30px;
 }
 header .navOpen {
   bottom: calc(100% - 100vh);
@@ -143,7 +161,7 @@ header .navOpen .navLinks {
   justify-content: center;
   width: 100vw;
   height: 101vh;
-  gap: 15vh;
+  gap: 10vh;
 }
 header .navOpen .navLinks > li {
   display: block;

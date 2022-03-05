@@ -112,15 +112,37 @@ header{
         height: 101vh;
         .navLinks{
             width: 0;
-            gap: 15vh;
+            gap: 10vh;
             >li{
                 list-style: none;
                 display: none;
                 >a{
                     color: $fontColor;
                     text-decoration: none;
-                    font-size: 35px;
+                    font-size: 30px;
                     font-family: 'Poppins';
+                }
+            }
+            .linksInNav{
+                display: none;
+                @include xl{
+                    display: flex;
+                    gap: 30px;
+                }
+                .LinkedIn{
+                    img{
+                        width: 30px;
+                    }
+                }
+                .GitHub{
+                    img{
+                        width: 30px;
+                    }
+                }
+                .Instagram{
+                    img{
+                        width: 30px;
+                    }
                 }
             }
         }
@@ -136,7 +158,7 @@ header{
             justify-content: center;
             width: 100vw;
             height: 101vh;
-            gap: 15vh;
+            gap: 10vh;
             >li{
                 display: block;
             }
