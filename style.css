@@ -33,6 +33,11 @@ header .usernameHeader img {
   filter: brightness(10);
 }
 @media screen and (max-width: 1200px) {
+  header .usernameHeader .typewrite {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
   header .usernameHeader {
     gap: 20px;
   }

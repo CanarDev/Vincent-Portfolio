@@ -27,6 +27,11 @@ header{
             width: 40px;
             filter: brightness(10);
         }
+        .typewrite{
+            @include xl{
+                display: none;
+            }
+        }
         @include xl{
             gap: 20px;
         }
