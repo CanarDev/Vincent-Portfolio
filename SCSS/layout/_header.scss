@@ -154,7 +154,7 @@ header{
         }
     }
     .navOpen{
-        bottom: calc(100% - 100vh);
+        bottom: -92vh;
         width: unset;
         transition: 0.5s all;
         .navLinks{
