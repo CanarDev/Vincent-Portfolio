@@ -1262,6 +1262,7 @@ header .navOpen .navLinks > li {
   justify-content: space-around;
   width: 90%;
   margin-top: 50px;
+  padding-bottom: 30px;
 }
 * .aboutmePage .sectionPassion .passionImages .imagesPassion {
   display: flex;
@@ -1300,6 +1301,10 @@ header .navOpen .navLinks > li {
 }
 * .aboutmePage .sectionPassion .passionImages .voyages {
   background-image: url(/images/about-me/tenerife.jpeg);
+  background-size: cover;
+}
+* .aboutmePage .sectionPassion .passionImages .canards {
+  background-image: url(/images/about-me/canards.jpeg);
   background-size: cover;
 }
 @media screen and (max-width: 1200px) {

@@ -152,6 +152,7 @@
                 justify-content: space-around;
                 width: 90%;
                 margin-top: 50px;
+                padding-bottom: 30px;
                 .imagesPassion{
                     display: flex;
                     justify-content: center;
@@ -190,6 +191,10 @@
                 }
                 .voyages{
                     background-image: url(/images/about-me/tenerife.jpeg);
+                    background-size: cover;
+                }
+                .canards{
+                    background-image: url(/images/about-me/canards.jpeg);
                     background-size: cover;
 
                 }
